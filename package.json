@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "biome check app"
+    "format": "biome check --write"
   },
   "dependencies": {
     "next": "15.0.1",

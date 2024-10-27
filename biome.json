@@ -7,12 +7,14 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": []
+    "ignore": [
+      ".next"
+    ]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "indentWidth": 2
+    "bracketSpacing": false
   },
   "organizeImports": {
     "enabled": true
@@ -20,13 +22,17 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "recommended": true,
       "complexity": {
         "noUselessTypeConstraint": "error"
       },
       "correctness": {
         "noUnusedVariables": "error",
-        "useArrayLiterals": "off"
+        "useArrayLiterals": "off",
+        "noUnusedImports": {
+          "level": "warn",
+          "fix": "safe"
+        }
       },
       "style": {
         "noNamespace": "error",
@@ -38,6 +44,13 @@
         "noMisleadingInstantiator": "error",
         "noUnsafeDeclarationMerging": "error",
         "useNamespaceKeyword": "error"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "level": "info",
+          "fix": "safe",
+          "options": {}
+        }
       }
     }
   },
