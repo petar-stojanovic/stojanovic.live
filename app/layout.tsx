@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Rubik} from "next/font/google";
+import { Rubik } from "next/font/google";
 
 const rubik = Rubik({
-  subsets: ['latin'],
-    style: ['normal', 'italic'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
 export const metadata: Metadata = {
   title: "Petar Stojanovic - Portfolio",
   description: "Petar Stojanovic's portfolio website.",
@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={rubik.className}>
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
