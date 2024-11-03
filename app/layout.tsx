@@ -1,6 +1,7 @@
 import {Rubik} from "next/font/google";
 import "./globals.css";
 import type {Metadata} from "next";
+import Header from "@/app/_components/Header";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -20,7 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={rubik.className}>
-      <body className="m-auto max-w-7xl bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px] px-10 pb-20">
+      <body className="z-[-2] min-h-screen min-w-96 bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">
+        <Header />
         {children}
       </body>
     </html>
