@@ -20,7 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={rubik.className}>
-      <body>{children}</body>
+      <body
+        className={
+          "bg-[radial-gradient(var(--foreground)_1px,var(--background)_1px)] bg-[size:50px_50px]"
+        }
+      >
+        {children}
+      </body>
     </html>
   );
 }
