@@ -22,10 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={rubik.className}>
-      <body className="z-[-2] min-h-screen min-w-96 bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">
-        <Header />
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+      <body className="min-h-screen min-w-96">
+        <div className="z-[-2] min-h-screen min-w-96 bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">
+          <Header />
+          <div className="min-h-screen">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
