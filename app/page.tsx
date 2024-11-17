@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mt-10">
+    <div className="mt-10 flex flex-col gap-14">
       <section className="flex items-center gap-10 py-4">
         <Image
           src={"/profile.jpg"}
@@ -17,12 +17,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-10">
+      <section>
         <h2 className="font-bold text-2xl">About Me</h2>
-        <p className="mt-2 text-lg">
+        <p className="mt-4 text-lg">
           I'm a Software Engineer who enjoys creating web and mobile apps. I love bringing ideas to life through code.
         </p>
       </section>
+
+      <section>
+        <h2 className="font-bold text-2xl">Skills</h2>
+        <ul className="mt-4 grid grid-cols-2 gap-1">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
+        </ul>
+      </section>
+
     </div>
   );
 }
