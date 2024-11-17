@@ -28,21 +28,36 @@ export default function Home() {
       <section>
         <h2 className="font-bold text-2xl">Contact</h2>
         <div className="mt-4">
-          <a className="p-4" href="mailto:2001petarstojanovic@gmail.com">
+          <a
+            className="block rounded-3xl border border-red-500 p-4"
+            href="mailto:2001petarstojanovic@gmail.com"
+          >
             <div className="flex items-center gap-2">
-              <Image src={"email.svg"} alt="Email" width={24} height={24}/>
+              <Image
+                src={"email.svg"}
+                alt="Email"
+                width={24}
+                height={24}
+                className="h-16 w-16"
+              />
               <span>Contact</span>
             </div>
           </a>
 
-          <a className="p-4" href="github.com/petar-stojanovic">
+          <a className="block p-4" href="github.com/petar-stojanovic">
             <div className="">
-              <Image src={"github.svg"} alt="Github" width={24} height={24}/>
+              <Image
+                src={"github.svg"}
+                alt="Github"
+                width={24}
+                height={24}
+                className="h-16 w-16"
+              />
             </div>
           </a>
 
           <a
-            className="pg-4"
+            className="block p-4"
             href="https://www.linkedin.com/in/petar-stojanovikj"
           >
             <div className="">
@@ -51,6 +66,7 @@ export default function Home() {
                 alt="LinkedIn"
                 width={24}
                 height={24}
+                className="h-16 w-16"
               />
             </div>
           </a>

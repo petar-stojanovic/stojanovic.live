@@ -26,6 +26,7 @@ export default function RootLayout({
         <Header />
         <main className="mx-auto max-w-2xl">{children}</main>
         <Footer />
+        <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(80%_50%_at_top,rgba(45,37,142,0.1),transparent)]" />
       </body>
     </html>
   );
