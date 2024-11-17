@@ -30,14 +30,14 @@ export default function Home() {
         <div className="mt-4">
           <a className="p-4" href="mailto:2001petarstojanovic@gmail.com">
             <div className="flex items-center gap-2">
-              <Image src={"email.svg"} alt="Email" width={24} height={24}/>
+              <Image src={"email.svg"} alt="Email" width={24} height={24} />
               <span>Contact</span>
             </div>
           </a>
 
           <a className="p-4" href="github.com/petar-stojanovic">
             <div className="">
-              <Image src={"github.svg"} alt="Github" width={24} height={24}/>
+              <Image src={"github.svg"} alt="Github" width={24} height={24} />
             </div>
           </a>
 
