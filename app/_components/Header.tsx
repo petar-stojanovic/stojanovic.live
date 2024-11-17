@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="p-4 mt-6 mx-auto max-w-2xl">
+    <header className="mx-auto mt-6 max-w-2xl p-4">
       <Link href="/" className="font-bold text-lg">
         stojanovic.live
       </Link>

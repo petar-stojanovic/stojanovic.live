@@ -20,8 +20,41 @@ export default function Home() {
       <section>
         <h2 className="font-bold text-2xl">About Me</h2>
         <p className="mt-4 text-lg">
-          I'm a Software Engineer who enjoys creating web and mobile apps. I love bringing ideas to life through code.
+          I'm a Software Engineer who enjoys creating web and mobile apps. I
+          love bringing ideas to life through code.
         </p>
+      </section>
+
+      <section>
+        <h2 className="font-bold text-2xl">Contact</h2>
+        <div className="mt-4">
+          <a className="p-4" href="mailto:2001petarstojanovic@gmail.com">
+            <div className="flex items-center gap-2">
+              <Image src={"email.svg"} alt="Email" width={24} height={24}/>
+              <span>Contact</span>
+            </div>
+          </a>
+
+          <a className="p-4" href="github.com/petar-stojanovic">
+            <div className="">
+              <Image src={"github.svg"} alt="Github" width={24} height={24}/>
+            </div>
+          </a>
+
+          <a
+            className="pg-4"
+            href="https://www.linkedin.com/in/petar-stojanovikj"
+          >
+            <div className="">
+              <Image
+                src={"linkedin.svg"}
+                alt="LinkedIn"
+                width={24}
+                height={24}
+              />
+            </div>
+          </a>
+        </div>
       </section>
 
       <section>
@@ -39,7 +72,6 @@ export default function Home() {
           <li>NoSQL</li>
         </ul>
       </section>
-
     </div>
   );
 }
