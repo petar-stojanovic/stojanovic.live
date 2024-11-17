@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={rubik.className}>
       <body className="z-[-2] bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">
-        <main className="mx-auto max-w-xl">
+        <main className="mx-auto max-w-2xl">
           <Header />
-          <div>{children}</div>
+          {children}
           <Footer />
         </main>
       </body>

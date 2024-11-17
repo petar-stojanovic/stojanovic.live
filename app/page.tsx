@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="flex items-center gap-10 py-4">
+    <div className="mt-10">
+      <section className="flex items-center gap-10 py-4">
         <Image
           src={"/profile.jpg"}
           width={100}
@@ -15,7 +15,14 @@ export default function Home() {
           <h1 className="font-bold text-3xl">Petar Stojanović</h1>
           <p className="text-xl">Software Engineer</p>
         </div>
-      </div>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="font-bold text-2xl">About Me</h2>
+        <p className="mt-2 text-lg">
+          I'm a Software Engineer who enjoys creating web and mobile apps. I love bringing ideas to life through code.
+        </p>
+      </section>
     </div>
   );
 }
