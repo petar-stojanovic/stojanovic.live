@@ -7,6 +7,7 @@
     --background: #ededed;
     --foreground: #111111;
     --background-dots: #17171733;
+    --a: rgba(39, 76, 185, 0.23);
   }
 
   .dark {
@@ -16,15 +17,9 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-
-  transition: all 0.3s;
-}
-
 @layer base {
   body {
     @apply bg-background text-foreground;
+    transition: all 0.3s;
   }
 }

@@ -29,7 +29,7 @@ export default function Home() {
         <h2 className="font-bold text-2xl">Contact</h2>
         <div className="mt-4">
           <a
-            className="block rounded-3xl border border-red-500 p-4"
+            className="block rounded-3xl border border-red-500 p-4 bg-background"
             href="mailto:2001petarstojanovic@gmail.com"
           >
             <div className="flex items-center gap-2">
