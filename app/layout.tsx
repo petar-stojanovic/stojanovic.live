@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import type {Metadata} from "next";
+import {ThemeProvider} from "@/app/providers";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -23,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={rubik.className}>
       <body className="z-[-2] bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">
-        <Header />
-        <main className="mx-auto max-w-2xl">{children}</main>
-        <Footer />
-        <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(80%_50%_at_top,rgba(45,37,142,0.1),transparent)]" />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          <main className="mx-auto max-w-2xl">{children}</main>
+          <Footer />
+          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(80%_50%_at_top,rgba(45,37,142,0.1),transparent)]" />
+        </ThemeProvider>
       </body>
     </html>
   );

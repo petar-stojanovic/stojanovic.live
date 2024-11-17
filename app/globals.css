@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ededed;
-  --foreground: #111111;
-  --background-dots: #17171733;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
+    --background: #ededed;
+    --foreground: #111111;
+    --background-dots: #17171733;
+  }
+
+  .dark {
     --background: #111111;
     --foreground: #ededed;
     --background-dots: #ededed33;
@@ -21,4 +21,10 @@ body {
   background: var(--background);
 
   transition: all 0.3s;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
 }
