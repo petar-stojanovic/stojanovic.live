@@ -47,7 +47,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex items-center justify-center rounded-3xl border border-foreground bg-background hover:scale-[102%] py-4"
+            className="flex items-center justify-center rounded-3xl border border-foreground bg-background py-4 hover:scale-[102%]"
             href="https://www.github.com/petar-stojanovic"
             target="_blank"
             rel="noreferrer"
@@ -64,7 +64,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex items-center justify-center rounded-3xl border border-foreground bg-background hover:scale-[102%] py-4"
+            className="flex items-center justify-center rounded-3xl border border-foreground bg-background py-4 hover:scale-[102%]"
             href="https://www.linkedin.com/in/petar-stojanovikj"
             target="_blank"
             rel="noreferrer"
