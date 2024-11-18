@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: #ededed;
+    --background: #eeeeee;
     --foreground: #111111;
     --background-dots: #17171733;
     --a: rgba(39, 76, 185, 0.23);
@@ -12,7 +12,7 @@
 
   .dark {
     --background: #111111;
-    --foreground: #ededed;
+    --foreground: #eeeeee;
     --background-dots: #ededed33;
   }
 }

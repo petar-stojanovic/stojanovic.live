@@ -27,47 +27,74 @@ export default function Home() {
 
       <section>
         <h2 className="font-bold text-2xl">Contact</h2>
-        <div className="mt-4">
+        <div className="mt-4 grid w-full grid-cols-4 gap-4">
           <a
-            className="block rounded-3xl border border-red-500 p-4 bg-background"
+            className="col-span-3 rounded-3xl border border-blue-100 bg-background hover:scale-[102%] "
             href="mailto:2001petarstojanovic@gmail.com"
+            target="_blank"
+            rel="noreferrer"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex h-full items-center justify-center ">
               <Image
                 src={"email.svg"}
                 alt="Email"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 className="h-16 w-16"
               />
               <span>Contact</span>
             </div>
           </a>
 
-          <a className="block p-4" href="github.com/petar-stojanovic">
+          <a
+            className="flex items-center justify-center rounded-3xl border border-blue-100 bg-background hover:scale-[102%] py-4"
+            href="https://www.github.com/petar-stojanovic"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="">
               <Image
                 src={"github.svg"}
                 alt="Github"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 className="h-16 w-16"
               />
             </div>
           </a>
 
           <a
-            className="block p-4"
+            className="flex items-center justify-center rounded-3xl border border-blue-100 bg-background hover:scale-[102%] py-4"
             href="https://www.linkedin.com/in/petar-stojanovikj"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className="">
               <Image
                 src={"linkedin.svg"}
                 alt="LinkedIn"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 className="h-16 w-16"
               />
+            </div>
+          </a>
+
+          <a
+            className="col-span-3 rounded-3xl border border-blue-100 bg-background hover:scale-[102%]"
+            href="mailto:2001petarstojanovic@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex h-full items-center justify-center ">
+              <Image
+                src={"email.svg"}
+                alt="Email"
+                width={16}
+                height={16}
+                className="h-16 w-16"
+              />
+              <span>Portfolio</span>
             </div>
           </a>
         </div>
