@@ -29,7 +29,7 @@ export default function Home() {
         <h2 className="font-bold text-2xl">Contact</h2>
         <div className="mt-4 grid w-full grid-cols-4 gap-4">
           <a
-            className="col-span-3 rounded-3xl border border-blue-100 bg-background hover:scale-[102%] "
+            className="col-span-3 rounded-3xl border border-foreground bg-background hover:scale-[102%] "
             href="mailto:2001petarstojanovic@gmail.com"
             target="_blank"
             rel="noreferrer"
@@ -47,7 +47,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex items-center justify-center rounded-3xl border border-blue-100 bg-background hover:scale-[102%] py-4"
+            className="flex items-center justify-center rounded-3xl border border-foreground bg-background hover:scale-[102%] py-4"
             href="https://www.github.com/petar-stojanovic"
             target="_blank"
             rel="noreferrer"
@@ -64,7 +64,7 @@ export default function Home() {
           </a>
 
           <a
-            className="flex items-center justify-center rounded-3xl border border-blue-100 bg-background hover:scale-[102%] py-4"
+            className="flex items-center justify-center rounded-3xl border border-foreground bg-background hover:scale-[102%] py-4"
             href="https://www.linkedin.com/in/petar-stojanovikj"
             target="_blank"
             rel="noreferrer"
@@ -81,7 +81,7 @@ export default function Home() {
           </a>
 
           <a
-            className="col-span-3 rounded-3xl border border-blue-100 bg-background hover:scale-[102%]"
+            className="col-span-3 rounded-3xl border border-foreground bg-background hover:scale-[102%]"
             href="mailto:2001petarstojanovic@gmail.com"
             target="_blank"
             rel="noreferrer"
