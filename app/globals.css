@@ -4,15 +4,14 @@
 
 @layer base {
   :root {
-    --background: #eeeeee;
+    --background: #fafafa;
     --foreground: #111111;
     --background-dots: #17171733;
-    --a: rgba(39, 76, 185, 0.23);
   }
 
   .dark {
     --background: #111111;
-    --foreground: #eeeeee;
+    --foreground: #fafafa;
     --background-dots: #ededed33;
   }
 }
