@@ -30,10 +30,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex gap-2">
+      <section className="flex gap-3">
         <button
           type="button"
-          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="https://www.github.com/petar-stojanovic"
@@ -54,7 +54,7 @@ export default function Home() {
 
         <button
           type="button"
-          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="https://www.linkedin.com/in/petar-stojanovikj"
@@ -75,7 +75,7 @@ export default function Home() {
 
         <button
           type="button"
-          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="mailto:2001petarstojanovic@gmail.com"
@@ -96,7 +96,7 @@ export default function Home() {
 
         <button
           type="button"
-          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="https://drive.google.com/file/d/1RSrJhWM5Giz8p8FcGhjCJkm82UMS_-vJ/view"
@@ -114,81 +114,6 @@ export default function Home() {
             </div>
           </a>
         </button>
-      </section>
-
-      <section>
-        <h2 className="font-bold text-2xl">Contact</h2>
-        <div className="mt-4 grid w-full grid-cols-4 gap-6">
-          <a
-            className="col-span-3 flex items-center justify-center rounded-3xl border border-neutral-800 bg-background hover:border-neutral-700"
-            href="mailto:2001petarstojanovic@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="flex items-center justify-center ">
-              <ThemeIcon
-                iconName="email"
-                alt="Email"
-                width={16}
-                height={16}
-                className="h-16 w-16"
-              />
-              <span>Contact</span>
-            </div>
-          </a>
-
-          <a
-            className="flex items-center justify-center rounded-3xl border border-neutral-800 bg-background py-4 hover:border-neutral-700"
-            href="https://www.github.com/petar-stojanovic"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="">
-              <ThemeIcon
-                iconName="github"
-                alt="Github"
-                width={16}
-                height={16}
-                className="h-16 w-16"
-              />
-            </div>
-          </a>
-
-          <a
-            className="flex items-center justify-center rounded-3xl border border-foreground border-neutral-800 bg-background py-4 hover:border-neutral-700"
-            href="https://www.linkedin.com/in/petar-stojanovikj"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="">
-              <ThemeIcon
-                iconName="linkedin"
-                alt="Linkedin"
-                width={16}
-                height={16}
-                className="h-16 w-16"
-              />
-            </div>
-          </a>
-
-          <a
-            className="col-span-3 flex items-center justify-center rounded-3xl border border-neutral-800 bg-background hover:border-neutral-700"
-            href="https://drive.google.com/file/d/1RSrJhWM5Giz8p8FcGhjCJkm82UMS_-vJ/view"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="flex h-full items-center justify-center ">
-              <ThemeIcon
-                iconName="resume"
-                alt="Resume"
-                width={16}
-                height={16}
-                className="h-16 w-16"
-              />
-              <span>Portfolio</span>
-            </div>
-          </a>
-        </div>
       </section>
 
       <section>
