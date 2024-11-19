@@ -1,5 +1,5 @@
-import Image from "next/image";
 import ThemeIcon from "@/app/_components/ThemeIcon";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
             I am a passionate Software Engineer who enjoys building web and
             mobile apps.
           </p>
-          <p className="mt-2 text-zinc-500 flex items-center gap-2">
+          <p className="mt-2 flex items-center gap-2 text-zinc-500">
             <ThemeIcon
               iconName="location"
               alt="Location"
@@ -28,6 +28,92 @@ export default function Home() {
             <span>Kumanovo, North Macedonia</span>
           </p>
         </div>
+      </section>
+
+      <section className="flex gap-2">
+        <button
+          type="button"
+          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        >
+          <a
+            href="https://www.github.com/petar-stojanovic"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex items-center justify-center">
+              <ThemeIcon
+                iconName="github"
+                alt="Github"
+                width={24}
+                height={24}
+                className="h-8 w-8"
+              />
+            </div>
+          </a>
+        </button>
+
+        <button
+          type="button"
+          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        >
+          <a
+            href="https://www.linkedin.com/in/petar-stojanovikj"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex items-center justify-center">
+              <ThemeIcon
+                iconName="linkedin"
+                alt="Linkedin"
+                width={24}
+                height={24}
+                className="h-8 w-8"
+              />
+            </div>
+          </a>
+        </button>
+
+        <button
+          type="button"
+          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        >
+          <a
+            href="mailto:2001petarstojanovic@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex items-center justify-center ">
+              <ThemeIcon
+                iconName="email"
+                alt="Email"
+                width={24}
+                height={24}
+                className="h-8 w-8"
+              />
+            </div>
+          </a>
+        </button>
+
+        <button
+          type="button"
+          className="rounded bg-zinc-100 p-2 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        >
+          <a
+            href="https://drive.google.com/file/d/1RSrJhWM5Giz8p8FcGhjCJkm82UMS_-vJ/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex items-center justify-center gap-2">
+              <ThemeIcon
+                iconName="resume"
+                alt="Resume"
+                width={30}
+                height={30}
+              />
+              <span>Portfolio</span>
+            </div>
+          </a>
+        </button>
       </section>
 
       <section>
