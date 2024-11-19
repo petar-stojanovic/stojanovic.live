@@ -18,23 +18,14 @@ export default function Home() {
             I am a passionate Software Engineer who enjoys building web and
             mobile apps.
           </p>
-          <p className="mt-2 text-zinc-500 flex items-center gap-2 dark:text-zinc-800 ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512"
-              width={20}
-              height={20}
-              stroke="currentColor"
-            >
-              <title>Location</title>
-              <path
-                d="M215.7 499.2C267 435 384 279.4 384 192C384 86
-           298 0 192 0S0 86 0 192c0 87.4 117 243 168.3
-            307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64
-             64 0 1 1 0 128 64 64 0 1 1 0-128z"
-              />
-            </svg>
-            Kumanovo, North Macedonia
+          <p className="mt-2 text-zinc-500 flex items-center gap-2">
+            <ThemeIcon
+              iconName="location"
+              alt="Location"
+              width={16}
+              height={16}
+            />
+            <span>Kumanovo, North Macedonia</span>
           </p>
         </div>
       </section>
@@ -49,7 +40,13 @@ export default function Home() {
             rel="noreferrer"
           >
             <div className="flex items-center justify-center ">
-              <ThemeIcon iconName="email" alt="Email" width={16} height={16} />
+              <ThemeIcon
+                iconName="email"
+                alt="Email"
+                width={16}
+                height={16}
+                className="h-16 w-16"
+              />
               <span>Contact</span>
             </div>
           </a>
@@ -61,8 +58,8 @@ export default function Home() {
             rel="noreferrer"
           >
             <div className="">
-              <Image
-                src={"github.svg"}
+              <ThemeIcon
+                iconName="github"
                 alt="Github"
                 width={16}
                 height={16}
@@ -78,9 +75,9 @@ export default function Home() {
             rel="noreferrer"
           >
             <div className="">
-              <Image
-                src={"linkedin.svg"}
-                alt="LinkedIn"
+              <ThemeIcon
+                iconName="linkedin"
+                alt="Linkedin"
                 width={16}
                 height={16}
                 className="h-16 w-16"
@@ -90,14 +87,14 @@ export default function Home() {
 
           <a
             className="col-span-3 flex items-center justify-center rounded-3xl border border-neutral-800 bg-background hover:border-neutral-700"
-            href="mailto:2001petarstojanovic@gmail.com"
+            href="https://drive.google.com/file/d/1RSrJhWM5Giz8p8FcGhjCJkm82UMS_-vJ/view"
             target="_blank"
             rel="noreferrer"
           >
             <div className="flex h-full items-center justify-center ">
-              <Image
-                src={"email.svg"}
-                alt="Email"
+              <ThemeIcon
+                iconName="resume"
+                alt="Resume"
                 width={16}
                 height={16}
                 className="h-16 w-16"
