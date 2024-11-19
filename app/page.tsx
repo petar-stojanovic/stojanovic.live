@@ -30,10 +30,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-wrap gap-3">
+      <section className="flex flex-wrap gap-2 sm:gap-3">
         <button
           type="button"
-          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-3 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="https://www.github.com/petar-stojanovic"
@@ -54,7 +54,7 @@ export default function Home() {
 
         <button
           type="button"
-          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-3 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="https://www.linkedin.com/in/petar-stojanovikj"
@@ -75,7 +75,7 @@ export default function Home() {
 
         <button
           type="button"
-          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-3 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="mailto:2001petarstojanovic@gmail.com"
@@ -96,7 +96,7 @@ export default function Home() {
 
         <button
           type="button"
-          className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="rounded-xl bg-zinc-100 p-3 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <a
             href="https://drive.google.com/file/d/1RSrJhWM5Giz8p8FcGhjCJkm82UMS_-vJ/view"
@@ -110,7 +110,7 @@ export default function Home() {
                 width={30}
                 height={30}
               />
-              <span>Portfolio</span>
+              <span>Resume</span>
             </div>
           </a>
         </button>
