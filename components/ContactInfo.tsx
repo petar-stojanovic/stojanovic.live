@@ -50,7 +50,7 @@ const ContactInfo = () => {
               />
             </a>
           </button>
-          <div className="pointer-events-none absolute right-0 left-0 z-10 mt-1 w-fit justify-center rounded-xl border border-neutral-800 bg-zinc-950 px-4 py-1 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+          <div className="pointer-events-none absolute right-0 left-0 z-10 mt-1 w-fit justify-center rounded-xl border border-neutral-800 bg-zinc-950 px-4 py-1 text-background opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-foreground">
             {it.label}
           </div>
         </div>
