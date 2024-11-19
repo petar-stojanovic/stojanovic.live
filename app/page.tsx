@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="mt-10 flex flex-col gap-14">
-      <section className="flex items-center gap-8 py-4">
+      <section className="flex flex-col items-center gap-8 py-4 sm:flex-row">
         <Image
           src={"/profile.jpg"}
           width={100}
@@ -14,7 +14,7 @@ export default function Home() {
         />
         <div className="flex flex-col gap-2">
           <h1 className="font-bold text-3xl">Petar Stojanović</h1>
-          <p className="text-xl leading-6">
+          <p className="text-lg leading-6 md:text-xl">
             I am a passionate Software Engineer who enjoys building web and
             mobile apps.
           </p>
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex gap-3">
+      <section className="flex flex-wrap gap-3">
         <button
           type="button"
           className="rounded-xl bg-zinc-100 p-4 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
@@ -103,7 +103,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-1">
               <ThemeIcon
                 iconName="resume"
                 alt="Resume"
