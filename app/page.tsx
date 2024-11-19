@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeIcon from "@/app/_components/ThemeIcon";
 
 export default function Home() {
   return (
@@ -48,13 +49,7 @@ export default function Home() {
             rel="noreferrer"
           >
             <div className="flex items-center justify-center ">
-              <Image
-                src={"email.svg"}
-                alt="Email"
-                width={16}
-                height={16}
-                className="h-16 w-16"
-              />
+              <ThemeIcon iconName="email" alt="Email" width={16} height={16} />
               <span>Contact</span>
             </div>
           </a>
