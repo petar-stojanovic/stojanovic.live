@@ -19,7 +19,7 @@ const ThemeIcon = ({
   const {resolvedTheme} = useTheme();
 
   const imageSrc =
-    resolvedTheme === "dark" ? `/${iconName}.svg` : `/${iconName}-dark.svg`;
+    resolvedTheme === "dark" ? `${iconName}.svg` : `${iconName}-dark.svg`;
 
   return (
     <Image
