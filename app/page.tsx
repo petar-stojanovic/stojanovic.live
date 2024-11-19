@@ -1,5 +1,5 @@
-import ContactInfo from "@/app/_components/ContactInfo";
-import ProfileInfo from "@/app/_components/ProfileInfo";
+import ContactInfo from "@/components/ContactInfo";
+import ProfileInfo from "@/components/ProfileInfo";
 import Image from "next/image";
 
 export default function Home() {
