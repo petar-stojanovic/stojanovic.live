@@ -4,7 +4,7 @@ import SkillsInfo from "@/components/SkillsInfo";
 
 export default function Home() {
   return (
-    <div className="mt-10 flex flex-col gap-14">
+    <div className="mt-10 flex flex-col gap-12">
       <ProfileInfo />
       <ContactInfo />
       <SkillsInfo />
