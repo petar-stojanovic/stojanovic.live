@@ -13,7 +13,7 @@ const ProfileInfo = () => {
       />
       <div className="flex flex-col gap-2 text-center sm:text-left">
         <h1 className="font-bold text-3xl">Petar Stojanović</h1>
-        <p className="text-lg leading-6 md:text-xl">
+        <p className="text-pretty text-lg leading-6 md:text-xl">
           I am a passionate Software Engineer who enjoys building web and mobile
           apps.
         </p>
