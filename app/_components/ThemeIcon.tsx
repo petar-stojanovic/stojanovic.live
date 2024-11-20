@@ -2,6 +2,7 @@
 
 import {useTheme} from "next-themes";
 import Image from "next/image";
+import {useEffect, useState} from "react";
 
 const ThemeIcon = ({
   iconName,
@@ -17,9 +18,13 @@ const ThemeIcon = ({
   className?: string;
 }) => {
   const {resolvedTheme} = useTheme();
+  const [imageSrc, setImageSrc] = useState(`${iconName}.svg`);
 
-  const imageSrc =
-    resolvedTheme === "dark" ? `${iconName}.svg` : `${iconName}-dark.svg`;
+  useEffect(() => {
+    setImageSrc(
+      resolvedTheme === "dark" ? `${iconName}.svg` : `${iconName}-dark.svg`,
+    );
+  }, [iconName, resolvedTheme]);
 
   return (
     <Image
