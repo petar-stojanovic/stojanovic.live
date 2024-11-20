@@ -43,12 +43,12 @@ const SkillsInfo = () => {
 
       <div className="mx-auto mb-12 sm:mx-0">
         {skills.map((skillCategory) => (
-          <div key={skillCategory.category}>
-            <h3 className="my-4 font-semibold text-lg">
+          <div key={skillCategory.category} className="mt-5 first:mt-0">
+            <h3 className="mb-2.5 font-semibold text-lg">
               {skillCategory.category}
             </h3>
 
-            <div className="grid grid-cols-3 gap-10 sm:grid-cols-6 sm:gap-6 md:grid-cols-6">
+            <div className="grid grid-cols-3 gap-5 sm:grid-cols-6 sm:gap-6 md:grid-cols-6 md:gap-8">
               {skillCategory.items.map((skill) => (
                 <div key={skill.name} className="group relative ">
                   <div className="flex aspect-square items-center justify-center rounded-xl border border-neutral-300 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
