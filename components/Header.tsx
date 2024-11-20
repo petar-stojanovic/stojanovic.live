@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="mx-auto max-w-2xl p-4 pt-8">
       <div className="flex items-center justify-between">
-        <Link href="/public" className="font-bold text-lg">
+        <Link href="/" className="font-bold text-lg">
           stojanovic.live
         </Link>
         <ModeToggle />

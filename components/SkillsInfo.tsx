@@ -37,21 +37,21 @@ const SkillsInfo = () => {
 
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-center font-semibold text-2xl sm:text-left lg:text-3xl">
+      <h2 className="text-center font-semibold text-2xl sm:text-left">
         Skills
       </h2>
 
       <div className="mx-auto mb-12 sm:mx-0">
         {skills.map((skillCategory) => (
           <div key={skillCategory.category} className="mt-5 first:mt-0">
-            <h3 className="mb-2.5 font-semibold text-lg">
+            <h3 className="mb-2.5 font-semibold leading-6">
               {skillCategory.category}
             </h3>
 
             <div className="grid grid-cols-3 gap-5 sm:grid-cols-6 sm:gap-6 md:grid-cols-6 md:gap-8">
               {skillCategory.items.map((skill) => (
                 <div key={skill.name} className="group relative ">
-                  <div className="flex aspect-square items-center justify-center rounded-xl border border-neutral-300 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
+                  <div className="flex aspect-square items-center justify-center rounded-xl border border-neutral-200 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
                     <div className="m-1 mt-2 flex flex-col items-center justify-center gap-1">
                       <Image
                         src={`/skills/${skill.iconName}.svg`}
