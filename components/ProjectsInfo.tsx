@@ -12,7 +12,7 @@ const ProjectsInfo = () => {
 
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-center font-semibold text-2xl sm:text-left">
+      <h2 className="text-center font-semibold text-2xl sm:text-left sm:text-3xl">
         Projects
       </h2>
     </section>

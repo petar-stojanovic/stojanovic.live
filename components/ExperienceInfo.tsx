@@ -36,18 +36,18 @@ const ExperienceInfo = () => {
 
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-center font-semibold text-2xl sm:text-left">
+      <h2 className="text-center font-semibold text-2xl sm:text-left sm:text-3xl">
         Experience
       </h2>
       <div>
         {experiences.map((exp) => (
           <div key={exp.id} className="mb-6 flex flex-col gap-1 pb-4">
-            <h3 className="mb-2.5 font-semibold text-xl tracking-tight ">
+            <h3 className="mb-2.5 font-semibold text-xl tracking-tight">
               {exp.title}
             </h3>
             <div className="flex flex-col gap-2 border-zinc-600 border-l-2 py-1 pl-4">
               <div className="flex justify-between">
-                <span className="font-semibold text-lg">{exp.company}</span>
+                <span className="font-medium text-lg">{exp.company}</span>
                 <span className="font-light text-neutral-600 dark:text-neutral-400">
                   {exp.duration}
                 </span>
