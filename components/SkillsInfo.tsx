@@ -52,13 +52,13 @@ const SkillsInfo = () => {
               {skillCategory.items.map((skill) => (
                 <div key={skill.name} className="group relative ">
                   <div className="flex aspect-square items-center justify-center rounded-xl border border-neutral-200 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
-                    <div className="m-1 mt-2 flex flex-col items-center justify-center gap-1">
+                    <div className="m-1 flex flex-col items-center justify-center gap-1">
                       <Image
                         src={`/skills/${skill.iconName}.svg`}
                         width={48}
                         height={48}
                         alt={skill.description}
-                        className="h-12 w-12 p-1"
+                        className="h-10 w-10 p-0.5"
                       />
                       <span className="text-[0.85rem]">{skill.name}</span>
                     </div>

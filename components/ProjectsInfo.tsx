@@ -1,5 +1,5 @@
 const ProjectsInfo = () => {
-  const projects = [
+  const _projects = [
     {
       id: 1,
       title: "Project 1",
