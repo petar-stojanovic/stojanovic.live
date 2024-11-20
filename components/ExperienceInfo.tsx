@@ -47,7 +47,14 @@ const ExperienceInfo = () => {
             </h3>
             <div className="flex flex-col gap-2 border-zinc-600 border-l-2 py-1 pl-4">
               <div className="flex justify-between">
-                <span className="font-medium text-lg">{exp.company}</span>
+                <a
+                  href={exp.url}
+                  className="font-medium text-lg hover:underline underline-offset-4"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {exp.company}
+                </a>
                 <span className="font-light text-neutral-600 dark:text-neutral-400">
                   {exp.duration}
                 </span>
