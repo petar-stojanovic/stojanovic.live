@@ -49,7 +49,7 @@ const ExperienceInfo = () => {
               <div className="flex justify-between">
                 <a
                   href={exp.url}
-                  className="font-medium text-lg hover:underline underline-offset-4"
+                  className="font-medium text-lg underline-offset-4 hover:underline"
                   target="_blank"
                   rel="noreferrer"
                 >
