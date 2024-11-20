@@ -6,11 +6,11 @@ const SkillsInfo = () => {
       category: "Advanced",
       items: [
         {name: "Angular", iconName: "angular", description: "Angular"},
-        {name: "HTML", iconName: "html", description: "HTML"},
-        {name: "CSS", iconName: "css", description: "CSS"},
         {name: "Ionic", iconName: "ionic", description: "Ionic"},
         {name: "Typescript", iconName: "typescript", description: "Typescript"},
         {name: "Spring", iconName: "spring", description: "Spring Framework"},
+        {name: "HTML", iconName: "html", description: "HTML"},
+        {name: "CSS", iconName: "css", description: "CSS"},
       ],
     },
     {
@@ -41,7 +41,7 @@ const SkillsInfo = () => {
         Skills
       </h2>
 
-      <div className="mx-auto mb-12 sm:mx-0">
+      <div className="mx-auto sm:mx-0">
         {skills.map((skillCategory) => (
           <div key={skillCategory.category} className="mt-5 first:mt-0">
             <h3 className="mb-2.5 font-semibold leading-6">
