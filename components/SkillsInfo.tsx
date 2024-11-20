@@ -2,22 +2,36 @@ import Image from "next/image";
 
 const SkillsInfo = () => {
   const skills = [
-    {name: "Angular", iconName: "angular", description: "Angular"},
-    {name: "HTML", iconName: "html", description: "HTML"},
-    {name: "CSS", iconName: "css", description: "CSS"},
-    {name: "Ionic", iconName: "ionic", description: "Ionic"},
-    {name: "Tailwind", iconName: "tailwind", description: "Tailwind"},
-    {name: "Typescript", iconName: "typescript", description: "Typescript"},
-    {name: "Firebase", iconName: "firebase", description: "Firebase"},
-    {name: "Git", iconName: "git", description: "Git"},
-    {name: "Java", iconName: "java", description: "Java"},
-    {name: "Kotlin", iconName: "kotlin", description: "Kotlin"},
-    {name: "Postgres", iconName: "postgres", description: "Postgres"},
-    {name: "React", iconName: "react", description: "React"},
     {
-      name: "Spring",
-      iconName: "spring",
-      description: "Spring Framework",
+      category: "Advanced",
+      items: [
+        {name: "Angular", iconName: "angular", description: "Angular"},
+        {name: "HTML", iconName: "html", description: "HTML"},
+        {name: "CSS", iconName: "css", description: "CSS"},
+        {name: "Ionic", iconName: "ionic", description: "Ionic"},
+        {name: "Typescript", iconName: "typescript", description: "Typescript"},
+        {name: "Spring", iconName: "spring", description: "Spring Framework"},
+        {name: "Java", iconName: "java", description: "Java"},
+      ],
+    },
+    {
+      category: "Intermediate",
+      items: [
+        {name: "Tailwind", iconName: "tailwind", description: "Tailwind"},
+        {name: "Firebase", iconName: "firebase", description: "Firebase"},
+        {name: "Git", iconName: "git", description: "Git"},
+        {name: "Kotlin", iconName: "kotlin", description: "Kotlin"},
+        {name: "Postgres", iconName: "postgres", description: "Postgres"},
+      ],
+    },
+    {
+      category: "Beginner",
+      items: [
+        {name: "React", iconName: "react", description: "React"},
+        {name: "C#", iconName: "csharp", description: "C#"},
+        {name: ".NET", iconName: "dotnet", description: ".NET"},
+        {name: "Docker", iconName: "docker", description: "Docker"},
+      ],
     },
   ];
 
@@ -28,23 +42,29 @@ const SkillsInfo = () => {
       </h2>
 
       <div className="mx-auto mt-4 mb-12 grid grid-cols-3 gap-6 sm:mx-0 sm:grid-cols-5 md:grid-cols-6">
-        {skills.map((skill) => (
-          <div key={skill.name} className="group relative">
-            <div className="flex aspect-square h-full items-center justify-center rounded-xl border border-neutral-300 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
-              <div className="m-1 mt-2 flex flex-col items-center justify-center gap-1">
-                <Image
-                  src={`/skills/${skill.iconName}.svg`}
-                  width={48}
-                  height={48}
-                  alt={skill.description}
-                  className="h-12 w-12 p-1"
-                />
-                <span>{skill.name}</span>
+        {skills.map((skillCategory) => (
+          <div key={skillCategory.category}>
+            <h3 className="font-semibold text-lg">{skillCategory.category}</h3>
+
+            {skillCategory.items.map((skill) => (
+              <div key={skill.name} className="group relative">
+                <div className="flex aspect-square h-full items-center justify-center rounded-xl border border-neutral-300 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
+                  <div className="m-1 mt-2 flex flex-col items-center justify-center gap-1">
+                    <Image
+                      src={`/skills/${skill.iconName}.svg`}
+                      width={48}
+                      height={48}
+                      alt={skill.description}
+                      className="h-12 w-12 p-1"
+                    />
+                    <span className="text-[0.85rem]">{skill.name}</span>
+                  </div>
+                </div>
+                <div className="pointer-events-none absolute right-0 left-0 z-10 mt-1 w-fit justify-center rounded-xl border border-neutral-800 bg-zinc-950 px-4 py-1 text-background opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-foreground">
+                  {skill.description}
+                </div>
               </div>
-            </div>
-            <div className="pointer-events-none absolute right-0 left-0 z-10 mt-1 w-fit justify-center rounded-xl border border-neutral-800 bg-zinc-950 px-4 py-1 text-background opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-foreground">
-              {skill.description}
-            </div>
+            ))}
           </div>
         ))}
       </div>
