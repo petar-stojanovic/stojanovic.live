@@ -19,7 +19,7 @@ const ProfileInfo = () => {
           I am a passionate Software Engineer who enjoys building web and mobile
           apps.
         </p>
-        <p className="mt-2 flex items-center gap-1.5 text-neutral-600 sm:justify-start dark:text-neutral-400">
+        <p className="mt-2 flex items-center justify-center gap-1.5 text-neutral-600 sm:justify-start dark:text-neutral-400">
           <ThemeIcon
             iconName="location"
             alt="Location"
