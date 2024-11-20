@@ -24,20 +24,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={rubik.className} suppressHydrationWarning>
       {/*<body className="z-[-2] bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">*/}
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
         >
-          {/*<div className="relative z-[-10] before:absolute before:top-0 before:left-0 before:bg-[url('/noise.jpg')] before:bg-cover before:opacity-[0.05]">*/}
-          <Header />
-          <div>
+          <div className="relative before:fixed before:inset-0 before:z-[-10] before:bg-[url('/noise.jpg')] before:bg-cover before:opacity-[0.025]">
+            <Header />
             <main className="mx-auto max-w-2xl px-4 md:px-0">{children}</main>
+            <Footer />
           </div>
-          <Footer />
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(80%_50%_at_50%_-20%,rgba(40,75,185,0.1),transparent)] dark:bg-[radial-gradient(80%_50%_at_50%_-20%,rgba(40,75,185,0.2),transparent)]" />
         </ThemeProvider>
+        <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(80%_50%_at_50%_-20%,rgba(40,75,185,0.1),transparent)] dark:bg-[radial-gradient(80%_50%_at_50%_-20%,rgba(40,75,185,0.2),transparent)]" />
       </body>
     </html>
   );
