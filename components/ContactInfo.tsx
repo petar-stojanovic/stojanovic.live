@@ -33,7 +33,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <section className="flex flex-wrap gap-2 sm:gap-3">
+    <section className="mx-auto flex flex-wrap gap-4 sm:gap-6">
       {contactData.map((it) => (
         <div key={it.id} className="group relative">
           <button

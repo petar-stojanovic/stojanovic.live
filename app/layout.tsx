@@ -30,7 +30,7 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
         >
-          <div className="relative before:fixed before:inset-0 before:z-[-10] before:bg-[url('/noise.jpg')] before:bg-cover before:opacity-[0.025]">
+          <div className="before: relative before:fixed before:inset-0 before:z-[-10] before:bg-[url('/noise.jpg')] before:bg-cover before:opacity-[0.025]">
             <Header />
             <main className="mx-auto max-w-2xl px-4 md:px-0">{children}</main>
             <Footer />
