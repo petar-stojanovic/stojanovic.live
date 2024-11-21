@@ -110,7 +110,7 @@ const ProjectsInfo = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1 group-hover:underline"
+                    className="flex items-center gap-1 underline-offset-2 group-hover:underline "
                   >
                     <ThemeIcon
                       iconName={"github"}
@@ -130,7 +130,7 @@ const ProjectsInfo = () => {
                       href={project.demoLink}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-1 group-hover:underline"
+                      className="flex items-center gap-1 underline-offset-2 group-hover:underline"
                     >
                       <ThemeIcon
                         iconName={"link"}
