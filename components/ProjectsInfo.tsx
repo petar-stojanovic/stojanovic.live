@@ -70,11 +70,11 @@ const ProjectsInfo = () => {
         I've worked on a variety of projects, from simple websites to complex
         web applications. Here are a few of my favorites.
       </p>
-      <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div className="mx-auto grid grid-cols-1 gap-5">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col gap-4 rounded-md border border-zinc-300 p-6 md:p-4 dark:border-zinc-700"
+            className="flex flex-col gap-4 rounded-md border border-zinc-300 p-5 dark:border-zinc-700"
           >
             <div className="">
               <Image
@@ -86,7 +86,7 @@ const ProjectsInfo = () => {
               />
             </div>
 
-            <div className="flex h-full flex-col justify-between space-y-2">
+            <div className="flex h-full flex-col justify-between space-y-4">
               <h3 className="font-semibold text-xl">{project.title}</h3>
               <p className="text-sm">{project.description}</p>
 
