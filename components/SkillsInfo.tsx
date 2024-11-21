@@ -31,6 +31,7 @@ const SkillsInfo = () => {
         {name: "C#", iconName: "csharp", description: "C#"},
         {name: ".NET", iconName: "dotnet", description: ".NET"},
         {name: "Docker", iconName: "docker", description: "Docker"},
+        {name: "Vue", iconName: "vue", description: "Vue"},
       ],
     },
   ];

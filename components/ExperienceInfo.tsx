@@ -11,6 +11,7 @@ const ExperienceInfo = () => {
       duration: "Mar 2024 - Jun 2024",
       summary:
         "Developed ERP solutions using X++ and Dynamics 365. Configured data models and optimized database transactions and queries.",
+      techStack: ["X++", "Dynamics 365", "SQL"],
     },
     {
       id: 2,
@@ -21,6 +22,14 @@ const ExperienceInfo = () => {
       duration: "Sep 2023 - Jan 2024",
       summary:
         "Refactored modules and redesigned a ticketing system platform using Angular and Spring Boot. Optimized queries for PostgreSQL, and gained experience with Ionic and Capacitor.",
+      techStack: [
+        "Angular",
+        "Spring Boot",
+        "Kotlin",
+        "PostgreSQL",
+        "Ionic",
+        "Capacitor",
+      ],
     },
     {
       id: 3,
@@ -31,6 +40,14 @@ const ExperienceInfo = () => {
       duration: "Jun 2023 - Sep 2023",
       summary:
         "Developed 'Courseify' an online course platform using Spring Boot (Kotlin), Angular, and PostgreSQL, with JWT-based authentication and Flyway for schema management.",
+      techStack: [
+        "Angular",
+        "Spring Boot",
+        "Kotlin",
+        "PostgreSQL",
+        "JWT",
+        "Flyway",
+      ],
     },
   ];
 
@@ -69,7 +86,19 @@ const ExperienceInfo = () => {
                 />
                 {exp.location}
               </div>
-              <p className="leading-[1.4rem]">{exp.summary}</p>
+
+              <p className="mb-1 leading-[1.4rem]">{exp.summary}</p>
+
+              <div className="flex flex-wrap gap-2">
+                {exp.techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-lg border border-neutral-200 bg-zinc-100 px-2.5 py-1 font-semi text-xs hover:border-neutral-300 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:border-neutral-700 dark:hover:bg-zinc-800"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

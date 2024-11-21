@@ -43,7 +43,7 @@ const ContactInfo = () => {
           <div key={it.id} className="group relative">
             <button
               type="button"
-              className="rounded-xl border border-neutral-200 bg-zinc-100 p-3 hover:border-neutral-300 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:border-neutral-700 dark:hover:bg-zinc-800 "
+              className="rounded-xl border border-neutral-200 bg-zinc-100 p-3 hover:border-neutral-300 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:border-neutral-700 dark:hover:bg-zinc-800"
             >
               <a href={it.href} target="_blank" rel="noreferrer">
                 <ThemeIcon
