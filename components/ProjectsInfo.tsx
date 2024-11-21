@@ -92,7 +92,10 @@ const ProjectsInfo = () => {
 
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
-                  <span key={tech} className="rounded-md p-1 text-xs">
+                  <span
+                    key={tech}
+                    className="rounded-2xl border border-neutral-200 bg-zinc-100 px-2.5 py-1 font-semi text-xs hover:border-neutral-300 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:border-neutral-700 dark:hover:bg-zinc-800"
+                  >
                     {tech}
                   </span>
                 ))}
