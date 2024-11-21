@@ -63,7 +63,7 @@ const ProjectsInfo = () => {
 
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-center font-semibold text-2xl sm:text-left sm:text-3xl">
+      <h2 className="mb-4 text-center font-light text-2xl uppercase tracking-wider sm:text-left sm:text-3xl">
         Projects
       </h2>
       <p className="text-center sm:text-left">
@@ -101,7 +101,7 @@ const ProjectsInfo = () => {
                 ))}
               </div>
 
-              <div className="text-background text-sm flex space-x-2">
+              <div className="flex space-x-2 text-background text-sm">
                 <button
                   type="button"
                   className="group h-8 rounded-lg bg-zinc-900 px-3 font-medium text-xs hover:border-neutral-300 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-zinc-300"

@@ -38,8 +38,8 @@ const SkillsInfo = () => {
 
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-center font-semibold text-2xl sm:text-left sm:text-3xl">
-        Skills
+      <h2 className="mb-4 text-center font-light text-2xl uppercase tracking-wider sm:text-left sm:text-3xl">
+        Skills / Technologies
       </h2>
 
       <div className="mx-auto sm:mx-0">

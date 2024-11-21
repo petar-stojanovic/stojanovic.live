@@ -34,7 +34,7 @@ const ContactInfo = () => {
 
   return (
     <section className="flex flex-col">
-      <h2 className="mb-4 text-center font-semibold text-2xl sm:text-left sm:text-3xl">
+      <h2 className="mb-4 text-center font-light text-2xl uppercase tracking-wider sm:text-left sm:text-3xl">
         Contact
       </h2>
 
