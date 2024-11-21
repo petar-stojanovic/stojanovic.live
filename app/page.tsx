@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div className="mt-10 flex flex-col gap-14">
       <ProfileInfo />
+      <ProjectsInfo />
       <ContactInfo />
       <ExperienceInfo />
       <SkillsInfo />
-      <ProjectsInfo />
     </div>
   );
 }
