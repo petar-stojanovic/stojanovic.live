@@ -8,12 +8,14 @@ const ThemeIcon = ({
   iconName,
   width,
   height,
+  reverse = false,
   alt = "",
   className = "",
 }: {
   iconName: string;
   width: number;
   height: number;
+  reverse?: boolean;
   alt?: string;
   className?: string;
 }) => {
@@ -22,9 +24,15 @@ const ThemeIcon = ({
 
   useEffect(() => {
     setImageSrc(
-      resolvedTheme === "dark" ? `${iconName}.svg` : `${iconName}-dark.svg`,
+      resolvedTheme === "dark"
+        ? reverse
+          ? `${iconName}-dark.svg`
+          : `${iconName}.svg`
+        : reverse
+          ? `${iconName}.svg`
+          : `${iconName}-dark.svg`,
     );
-  }, [iconName, resolvedTheme]);
+  }, [iconName, resolvedTheme, reverse]);
 
   return (
     <Image

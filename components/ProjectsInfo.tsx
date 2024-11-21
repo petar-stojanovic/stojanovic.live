@@ -1,8 +1,12 @@
+import ThemeIcon from "@/app/_components/ThemeIcon";
+import Image from "next/image";
+
 const ProjectsInfo = () => {
   const projects = [
     {
       id: 1,
       title: "Agromak",
+      image: "/projects/agromak.png",
       description:
         "Mobile application for classified ads integrated with OpenAI.",
       techStack: ["Angular", "Firebase", "Ionic", "Capacitor", "OpenAI"],
@@ -12,6 +16,7 @@ const ProjectsInfo = () => {
     {
       id: 2,
       title: "Courseify",
+      image: "/projects/courseify.png",
       description:
         "A platform that allows creating online courses and quizzes for students and teachers.",
       techStack: [
@@ -28,8 +33,9 @@ const ProjectsInfo = () => {
     {
       id: 3,
       title: "SocialNetwork",
+      image: "/projects/socialnetwork.png",
       description:
-        "A web application for sharing tweets, making friends and chatting.",
+        "Web application for sharing tweets, making friends and chatting.",
       techStack: [
         "ASP.NET MVC",
         "C#",
@@ -44,8 +50,9 @@ const ProjectsInfo = () => {
     {
       id: 4,
       title: "MyEducation",
+      image: "/projects/myeducation.png",
       description:
-        "MyEducation is a web application where you can search for locations and other relevant information about different types of educational institutions across Macedonia.",
+        "Web application that lets you search for information about educational institutions in Macedonia.",
       techStack: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Bootstrap"],
       githubLink:
         "https://github.com/petar-stojanovic/EducationUnitsWebApplication",
@@ -59,50 +66,63 @@ const ProjectsInfo = () => {
       <h2 className="text-center font-semibold text-2xl sm:text-left sm:text-3xl">
         Projects
       </h2>
-      <p>
+      <p className="text-center sm:text-left">
         I've worked on a variety of projects, from simple websites to complex
         web applications. Here are a few of my favorites.
       </p>
-      {projects.map((project) => (
-        <div key={project.id}>
-          <h3 className="mt-2.5 font-semibold text-xl tracking-tight">
-            {project.title}
-          </h3>
-          <p className="mb-1 leading-[1.4rem]">{project.description}</p>
-          <div className="flex flex-wrap gap-2">
-            {project.techStack.map((tech) => (
-              <span
-                key={tech}
-                className="px-2 py-1 text-sm bg-zinc-100 rounded-md dark:bg-zinc-900"
-              >
-                {tech}
-              </span>
-            ))}
+      <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="flex flex-col gap-4 rounded-md border border-zinc-300 p-6 md:p-4 dark:border-zinc-700"
+          >
+            <div className="">
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={1920}
+                height={1080}
+                className="aspect-video rounded-md object-cover"
+              />
+            </div>
+
+            <div className="flex h-full flex-col justify-between space-y-2">
+              <h3 className="font-semibold text-xl">{project.title}</h3>
+              <p className="text-sm">{project.description}</p>
+
+              <div className="flex flex-wrap gap-2">
+                {project.techStack.map((tech) => (
+                  <span key={tech} className="rounded-md p-1 text-xs">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="text-background text-sm">
+                <button
+                  type="button"
+                  className="group h-8 rounded-lg bg-zinc-900 px-3 font-medium text-xs hover:border-neutral-300 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-zinc-300"
+                >
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-1 group-hover:underline"
+                  >
+                    <ThemeIcon
+                      iconName={"github"}
+                      reverse={true}
+                      width={16}
+                      height={16}
+                    />
+                    <span>Github</span>
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="flex gap-4 mt-2">
-            {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noreferrer"
-                className="text-pretty hover:underline"
-              >
-                View on GitHub
-              </a>
-            )}
-            {project.demoLink && (
-              <a
-                href={project.demoLink}
-                target="_blank"
-                rel="noreferrer"
-                className="text-pretty hover:underline"
-              >
-                View Demo
-              </a>
-            )}
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
