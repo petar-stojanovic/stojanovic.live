@@ -1,5 +1,6 @@
 import {Rubik} from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "@/app/_components/ScrollToTop";
 import {ThemeProvider} from "@/app/providers";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -37,6 +38,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
         <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(80%_50%_at_50%_-20%,rgba(40,75,185,0.1),transparent)] dark:bg-[radial-gradient(80%_50%_at_50%_-20%,rgba(40,75,185,0.2),transparent)]" />
+        <ScrollToTop />
       </body>
     </html>
   );
