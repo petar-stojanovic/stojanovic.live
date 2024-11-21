@@ -101,7 +101,7 @@ const ProjectsInfo = () => {
                 ))}
               </div>
 
-              <div className="text-background text-sm">
+              <div className="text-background text-sm flex space-x-2">
                 <button
                   type="button"
                   className="group h-8 rounded-lg bg-zinc-900 px-3 font-medium text-xs hover:border-neutral-300 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-zinc-300"
@@ -121,6 +121,27 @@ const ProjectsInfo = () => {
                     <span>Github</span>
                   </a>
                 </button>
+                {project.demoLink && (
+                  <button
+                    type="button"
+                    className="group h-8 rounded-lg bg-zinc-900 px-3 font-medium text-xs hover:border-neutral-300 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-zinc-300"
+                  >
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1 group-hover:underline"
+                    >
+                      <ThemeIcon
+                        iconName={"link"}
+                        reverse={true}
+                        width={16}
+                        height={16}
+                      />
+                      <span>Demo</span>
+                    </a>
+                  </button>
+                )}
               </div>
             </div>
           </div>
