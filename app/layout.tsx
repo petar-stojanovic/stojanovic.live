@@ -24,7 +24,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={rubik.className} suppressHydrationWarning>
-      {/*<body className="z-[-2] bg-[radial-gradient(var(--background-dots)_1px,var(--background)_2px)] bg-[size:40px_40px]">*/}
       <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
