@@ -25,7 +25,6 @@ const ContactInfo = () => {
     },
     {
       id: 4,
-      // href: "https://drive.google.com/file/d/1RSrJhWM5Giz8p8FcGhjCJkm82UMS_-vJ/view",
       href: "/CV.pdf",
       iconName: "resume",
       alt: "Resume",
