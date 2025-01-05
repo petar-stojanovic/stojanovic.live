@@ -1,17 +1,33 @@
 import ThemeIcon from "@/app/_components/ThemeIcon";
 
 const ExperienceInfo = () => {
-  const experiences = [
+  const experiences: {
+    id: number;
+    title: string;
+    company: string;
+    url: string;
+    location: string;
+    duration: string;
+    summary: string;
+    techStack: string[];
+  }[] = [
     {
       id: 1,
-      title: "Microsoft Dynamics Intern",
-      company: "AXo solutions",
-      url: "https://axosolutions.com/",
+      title: "Web Programming Intern",
+      company: "Sorsix",
+      url: "https://sorsix.com/",
       location: "Skopje, North Macedonia",
-      duration: "Mar 2024 - Jun 2024",
+      duration: "Jun 2023 - Sep 2023",
       summary:
-        "Developed ERP solutions using X++ and Dynamics 365. Configured data models and optimized database transactions and queries.",
-      techStack: ["X++", "Dynamics 365", "SQL"],
+        "Developed 'Courseify' an online course platform using Spring Boot (Kotlin), Angular, and PostgreSQL, with JWT-based authentication and Flyway for schema management.",
+      techStack: [
+        "Angular",
+        "Spring Boot",
+        "Kotlin",
+        "PostgreSQL",
+        "JWT",
+        "Flyway",
+      ],
     },
     {
       id: 2,
@@ -33,21 +49,25 @@ const ExperienceInfo = () => {
     },
     {
       id: 3,
-      title: "Web Programming Intern",
-      company: "Sorsix",
-      url: "https://sorsix.com/",
+      title: "Microsoft Dynamics Intern",
+      company: "AXo solutions",
+      url: "https://axosolutions.com/",
       location: "Skopje, North Macedonia",
-      duration: "Jun 2023 - Sep 2023",
+      duration: "Mar 2024 - Jun 2024",
       summary:
-        "Developed 'Courseify' an online course platform using Spring Boot (Kotlin), Angular, and PostgreSQL, with JWT-based authentication and Flyway for schema management.",
-      techStack: [
-        "Angular",
-        "Spring Boot",
-        "Kotlin",
-        "PostgreSQL",
-        "JWT",
-        "Flyway",
-      ],
+        "Developed ERP solutions using X++ and Dynamics 365. Configured data models and optimized database transactions and queries.",
+      techStack: ["X++", "Dynamics 365", "SQL"],
+    },
+    {
+      id: 4,
+      title: "Full Stack Developer",
+      company: "MCA",
+      url: "https://www.mca.dev/",
+      location: "Skopje, North Macedonia",
+      duration: "Dec 2024 - PRESENT",
+      summary:
+        "Developing and maintaining web and mobile application for a Danish client about construction site data logistics and operations.",
+      techStack: ["Angular", "C#", ".NET", "Microsoft SQL Server"],
     },
   ];
 
@@ -57,7 +77,7 @@ const ExperienceInfo = () => {
         Experience
       </h2>
       <div className="flex flex-col gap-8">
-        {experiences.map((exp) => (
+        {experiences.reverse().map((exp) => (
           <div key={exp.id}>
             <h3 className="mb-3 font-semibold text-2xl tracking-tight">
               {exp.title}
@@ -72,7 +92,7 @@ const ExperienceInfo = () => {
                 >
                   {exp.company}
                 </a>
-                <span className="font-light text-neutral-600 dark:text-neutral-400">
+                <span className="font-light text-neutral-600 tracking-wider dark:text-neutral-400">
                   {exp.duration}
                 </span>
               </div>
