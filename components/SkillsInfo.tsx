@@ -6,30 +6,33 @@ const SkillsInfo = () => {
       category: "Advanced",
       items: [
         {name: "Angular", iconName: "angular", description: "Angular"},
-        {name: "Ionic", iconName: "ionic", description: "Ionic"},
+        {name: ".NET", iconName: "dotnet", description: ".NET"},
         {name: "Typescript", iconName: "typescript", description: "Typescript"},
-        {name: "Spring", iconName: "spring", description: "Spring Framework"},
-        {name: "HTML", iconName: "html", description: "HTML"},
-        {name: "CSS", iconName: "css", description: "CSS"},
+        {name: "C#", iconName: "csharp", description: "C#"},
+        {
+          name: "SQL Server",
+          iconName: "microsoft-sql-server",
+          description: "Microsoft SQL Server",
+        },
+        {name: "Git", iconName: "git", description: "Git"},
       ],
     },
     {
       category: "Intermediate",
       items: [
+        {name: "Spring", iconName: "spring", description: "Spring Framework"},
         {name: "Java", iconName: "java", description: "Java"},
         {name: "Kotlin", iconName: "kotlin", description: "Kotlin"},
+        {name: "Postgres", iconName: "postgres", description: "Postgres"},
         {name: "Tailwind", iconName: "tailwind", description: "Tailwind"},
         {name: "Firebase", iconName: "firebase", description: "Firebase"},
-        {name: "Git", iconName: "git", description: "Git"},
-        {name: "Postgres", iconName: "postgres", description: "Postgres"},
       ],
     },
     {
       category: "Beginner",
       items: [
+        {name: "Ionic", iconName: "ionic", description: "Ionic"},
         {name: "React", iconName: "react", description: "React"},
-        {name: "C#", iconName: "csharp", description: "C#"},
-        {name: ".NET", iconName: "dotnet", description: ".NET"},
         {name: "Docker", iconName: "docker", description: "Docker"},
         {name: "Vue", iconName: "vue", description: "Vue"},
       ],
@@ -49,9 +52,9 @@ const SkillsInfo = () => {
               {skillCategory.category}
             </h3>
 
-            <div className="grid grid-cols-3 gap-5 sm:grid-cols-6 sm:gap-6 md:grid-cols-6 md:gap-8">
+            <div className="grid grid-cols-3 gap-5 sm:grid-cols-6 sm:gap-6 md:grid-cols-6 md:gap-7">
               {skillCategory.items.map((skill) => (
-                <div key={skill.name} className="group relative ">
+                <div key={skill.name} className="group relative text-center">
                   <div className="flex aspect-square items-center justify-center rounded-xl border border-neutral-200 bg-zinc-100 p-1 duration-200 ease-in-out hover:border-neutral-400 hover:bg-zinc-200 dark:border-neutral-800 dark:bg-zinc-900 dark:hover:bg-zinc-800">
                     <div className="m-1 flex flex-col items-center justify-center gap-1">
                       <Image
